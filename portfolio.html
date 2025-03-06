@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <a href="#" class="logo">
+                <div class="logo-circle"></div>
+                MyPortfolio
+            </a>
+            <div class="mobile-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu" id="menu">
+                <li class="menu-item"><a href="#home">Home</a></li>
+                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#projects">Projects</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+                <li class="menu-item"><a href="#" class="btn" id="resumeBtn">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="particles">
+            <span class="particle" style="top: 20%; left: 80%; width: 8px; height: 8px; animation-delay: 0s;"></span>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h2 class="hero-subtitle">Welcome to My Portfolio</h2>
+                <h1 class="hero-title">I'm <span class="hero-title-highlight">Aditi Pandey</span></h1>
+                <p class="hero-description">A passionate developer focused on building strong, effective, and innovative digital solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-alt">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="cube-wrapper">
+                    <div class="cube">
+                        <div class="cube-face front">1</div>
+                        <div class="cube-face back">2</div>
+                        <div class="cube-face left">3</div>
+                        <div class="cube-face right">4</div>
+                        <div class="cube-face top">5</div>
+                        <div class="cube-face bottom">6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container about-container">
+            <div class="about-visual">
+                <div class="profile-frame">
+                    <img src="profile.jpeg" alt="Profile Image" class="profile-img">
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    I'm a software developer with a passion for creating innovative solutions. I have worked with a variety of programming languages and technologies
+                </p>
+                <div class="skills-container">
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">AI/ML Libraries</div>
+                    <div class="skill-item">Data Science tools (numpy,pandas,matplotlib etc)</div>
+                    <div class="skill-item">Flutter</div>
+                    <div class="skill-item">HTML & CSS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="projects-header">
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-wrapper">
+                
+                <div class="project-item">
+                    <div class="project-visual">
+                        <img src="opencv.jpeg" alt="opencv" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">1. Night Driving Alert!</h3>
+                        <div class="project-description">
+                            This project develops a system to detect drowsiness and yawning in truck drivers using computer vision. It monitors driver alertness and sends alerts when drowsiness is detected, helping to keep drivers attentive and safe, especially during late-night driving.
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Numpy</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">SciPy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Project</a>
+                            <a href="#" class="btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+    
+                
+                <div class="project-item">
+                    <div class="project-visual">
+                        <img src="intrusionDetection.jpeg" alt="intrusion" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">2. Intrusion Detection</h3>
+                        <div class="project-description">
+                            This project detects movement via a camera and verifies it against the GPS location of personnel. If the GPS matches, the movement is identified as friendly. If not, it likely indicates an intrusion, triggering an alert. For demonstration, static GPS coordinates are used, but the system can be adapted for real-time GPS tracking with external devices.
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Numpy</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Geopy</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Project</a>
+                            <a href="#" class="btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+    
+               
+                <div class="project-item">
+                    <div class="project-visual">
+                        <img src="Desktop.jpg" alt="desktop assistant" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">3. AI Voice Assistant</h3>
+                        <div class="project-description">
+                            A simple AI voice assistant designed to capture voice commands and perform tasks efficiently. While currently utilizing predefined responses, future integration of NLP techniques will enable more dynamic and context-aware interactions.
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">speech_recognition</span>
+                            <span class="tech-tag">Speech Synthesis [pyttsx3]</span>
+                            <span class="tech-tag">Webbrowser</span>
+                            <span class="tech-tag">Wekipedia</span>
+                            <span class="tech-tag">datetime</span>
+                           
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Project</a>
+                            <a href="#" class="btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+    
+                
+                <div class="project-item">
+                    <div class="project-visual">
+                        <img src="hack.png" alt="hackathon managment" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">4. Hackathon Managment App</h3>
+                        <div class="project-description">
+                            Our hackathon management app streamlines event logistics by organizing seating for teams, managing judges' scoring and normalization, tracking attendance, and coordinating meal distribution, ensuring a seamless experience for all participants.
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Project</a>
+                            <a href="#" class="btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+    
+                
+                <div class="project-item">
+                    <div class="project-visual">
+                        <img src="tech.jpeg" alt="V-News" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">5. V-News</h3>
+                        <div class="project-description">
+                            The very First attempt to make Application using flutter .This mobile application consolidates all college-related news and announcements into a single platform, streamlining communication and reducing the need for multiple WhatsApp groups. It provides a centralized hub for students and staff to access important updates efficiently.
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Project</a>
+                            <a href="#" class="btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div class="info-text">
+                        <h3>Email</h3>
+                        <p>pandeyaditi8305@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">🔗</div>
+                    <div class="info-text">
+                        <h3>Instagram</h3>
+                        <p>aditipandey8305</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">MyPortfolio</div>
+            <ul class="footer-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="https://github.com/a-aditiminervaa" target="_blank" class="social-icon">
+                    <img src="github.png" alt="Github icon" class="icon">
+                </a>
+                <a href="www.linkedin.com/in/aditi-pandey-009900298e" target="_blank" class="social-icon">
+                    <img src="linkedin.png" alt="LinkedIn Icon" class="icon">
+                </a>
+                <a href="mailto:pandeyaditi8305@gmail.com" class="social-icon">
+                    <img src="email.png" alt="Email Icon" class="icon">
+                </a>
+            </div>
+            
+        </div>
+        
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
